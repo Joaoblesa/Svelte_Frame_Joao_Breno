@@ -8,10 +8,8 @@
 
 
 ## Em quais cenários ele não é indicado?
-* Quando NÃO é indicado?
+* Mercado de Trabalho: Se o objetivo for apenas encontrar o maior volume de vagas (React ainda domina).
 
-Mercado de Trabalho: Se o objetivo for apenas encontrar o maior volume de vagas (React ainda domina).
+* Ecossistema: Se você precisa de muitas bibliotecas prontas e complexas que só existem para frameworks mais antigos.
 
-Ecossistema: Se você precisa de muitas bibliotecas prontas e complexas que só existem para frameworks mais antigos.
-
-Mobile Nativo: Se o foco for criar apps de celular (iOS/Android) com alta maturidade, onde o React Native ainda é o padrão.
+* Mobile Nativo: Se o foco for criar apps de celular (iOS/Android) com alta maturidade, onde o React Native ainda é o padrão.
