@@ -2,6 +2,7 @@
 
 
 ## FUNCIONAMENTO
+* Para acessar a pagina, precisa seguir esse passo a passo, porque ele tem seu proprio funcionamento
 * Digite esse codigo no terminal "npm run dev"
 * Vai carregar e pressione ctrl + h
 * Vai carregar e pressione ctrl + o para ir para o navegador

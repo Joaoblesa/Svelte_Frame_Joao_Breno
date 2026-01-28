@@ -1,0 +1,44 @@
+<script>
+  import { onMount } from "svelte";
+  import { page } from "$app/stores";
+
+  let raca = $page.params.raca;
+  let fotoUrl = "";
+
+  onMount(async () => {
+    const res = await fetch(`https://dog.ceo/api/breed/${raca}/images/random`);
+    const json = await res.json();
+    fotoUrl = json.message;
+  });
+</script>
+
+<main>
+  <h1>{raca}</h1>
+  {#if fotoUrl}
+    <img src={fotoUrl} alt={raca} />
+  {/if}
+  <a href="/" class="voltar">← Voltar</a>
+</main>
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #bee7ff;
+    padding: 50px;
+    font-family: sans-serif;
+  }
+  img {
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  .voltar {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #3700ff;
+    font-weight: bold;
+  }
+</style>
